@@ -1,21 +1,26 @@
 <?php
 
-header ('Content-Type: application/json');
+$dir = dirname (__FILE__);
+chdir ($dir);
+chdir ('..');
 
 $patches = glob ('patches/*.patch');
 $scripts = glob ('patches/*.sql');
 
 foreach ($patches as $k => $patch) {
-	$patches[$k] = 'http://www.elefantcms.com/updates/' . $patch;
+	$patches[$k] = 'https://raw.github.com/jbroadway/elefant-updates/master/' . $patch;
 }
 
 foreach ($scripts as $k => $script) {
-	$scripts[$k] = 'http://www.elefantcms.com/updates/' . $script;
+	$scripts[$k] = 'https://raw.github.com/jbroadway/elefant-updates/master/' . $script;
 }
 
-echo json_encode (array (
-	'patches' => $patches,
-	'scripts' => $scripts
-));
+file_put_contents (
+	'patches.json',
+	json_encode (array (
+		'patches' => $patches,
+		'scripts' => $scripts
+	))
+);
 
 ?>
