@@ -1,0 +1,1 @@
+elefant_update_response({"latest": "1.2.2"})
