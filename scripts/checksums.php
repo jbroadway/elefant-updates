@@ -25,4 +25,12 @@ foreach ($patches as $patch) {
 	);
 }
 
+$scripts = glob ('patches/*.sql');
+foreach ($scripts as $script) {
+	file_put_contents (
+		'../checksums/' . $script . '.sha',
+		hash_file ('sha512', $script)
+	);
+}
+
 ?>

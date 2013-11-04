@@ -8,11 +8,11 @@ $patches = glob ('patches/*.patch');
 $scripts = glob ('patches/*.sql');
 
 foreach ($patches as $k => $patch) {
-	$patches[$k] = 'https://raw.github.com/jbroadway/elefant-updates/master/' . $patch;
+	$patches[$k] = $patch;
 }
 
 foreach ($scripts as $k => $script) {
-	$scripts[$k] = 'https://raw.github.com/jbroadway/elefant-updates/master/' . $script;
+	$scripts[$k] = $script;
 }
 
 file_put_contents (
