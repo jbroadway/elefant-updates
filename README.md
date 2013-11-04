@@ -55,4 +55,11 @@ The `.js` files for the JSONP support can then be created via:
 
 	php scripts/callbacks.php
 
-The regenerated files can be committed and pushed to Github.
+Finally, create the checksums for the updater to verify the authenticity of the
+update files. This assumes that the `elefantcms/checksums` repository was cloned
+into a folder beside the `jbroadway/elefant-updates` folder.
+
+	php scripts/checksums.php
+
+The regenerated files can be committed and pushed to the two respective Github
+repositories.
