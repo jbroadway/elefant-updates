@@ -63,3 +63,9 @@ repository was cloned into a folder beside the `jbroadway/elefant-updates` folde
 
 The regenerated files can now be committed and pushed to the two respective Github
 repositories.
+
+## How to test a patch
+
+To test a patch, run this in the root folder of a site running the previous release:
+
+	patch --dry-run -p1 -f -i ~/projects/updates/patches/file.patch
