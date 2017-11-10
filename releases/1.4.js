@@ -1,1 +1,1 @@
-elefant_update_response({"latest": "1.3.12"})
+elefant_update_response({"latest": "2.0.2"})
