@@ -3,7 +3,7 @@ Files elefant-elefant_2_0_8_stable/.gitignore and elefant-elefant_2_0_9_stable/.
 Files elefant-elefant_2_0_8_stable/.htaccess and elefant-elefant_2_0_9_stable/.htaccess are identical
 diff -urBNs elefant-elefant_2_0_8_stable/.travis.yml elefant-elefant_2_0_9_stable/.travis.yml
 --- elefant-elefant_2_0_8_stable/.travis.yml	2018-12-09 10:45:35.000000000 -0600
-+++ elefant-elefant_2_0_9_stable/.travis.yml	2019-04-07 15:34:20.000000000 -0500
++++ elefant-elefant_2_0_9_stable/.travis.yml	2019-04-07 17:03:01.000000000 -0500
 @@ -5,7 +5,9 @@
    - 5.5
    - 5.6
@@ -104,7 +104,7 @@ Files elefant-elefant_2_0_8_stable/apps/admin/css/jquery.jgrowl.css and elefant-
 Files elefant-elefant_2_0_8_stable/apps/admin/css/jquery.notifier.css and elefant-elefant_2_0_9_stable/apps/admin/css/jquery.notifier.css are identical
 diff -urBNs elefant-elefant_2_0_8_stable/apps/admin/css/jquery.select-buttons.css elefant-elefant_2_0_9_stable/apps/admin/css/jquery.select-buttons.css
 --- elefant-elefant_2_0_8_stable/apps/admin/css/jquery.select-buttons.css	2018-12-09 10:45:35.000000000 -0600
-+++ elefant-elefant_2_0_9_stable/apps/admin/css/jquery.select-buttons.css	2019-04-07 15:34:20.000000000 -0500
++++ elefant-elefant_2_0_9_stable/apps/admin/css/jquery.select-buttons.css	2019-04-07 17:03:01.000000000 -0500
 @@ -16,7 +16,7 @@
      -webkit-border-radius: 0px;
      -moz-border-radius: 0px;
@@ -116,7 +116,7 @@ diff -urBNs elefant-elefant_2_0_8_stable/apps/admin/css/jquery.select-buttons.cs
      text-align: center;
 diff -urBNs elefant-elefant_2_0_8_stable/apps/admin/css/minimal-grid.css elefant-elefant_2_0_9_stable/apps/admin/css/minimal-grid.css
 --- elefant-elefant_2_0_8_stable/apps/admin/css/minimal-grid.css	2018-12-09 10:45:35.000000000 -0600
-+++ elefant-elefant_2_0_9_stable/apps/admin/css/minimal-grid.css	2019-04-07 15:34:20.000000000 -0500
++++ elefant-elefant_2_0_9_stable/apps/admin/css/minimal-grid.css	2019-04-07 17:03:01.000000000 -0500
 @@ -14,27 +14,39 @@
   *
   * Classes:
@@ -235,7 +235,7 @@ Files elefant-elefant_2_0_8_stable/apps/admin/handlers/util/fontawesome.php and 
 Files elefant-elefant_2_0_8_stable/apps/admin/handlers/util/i18n.php and elefant-elefant_2_0_9_stable/apps/admin/handlers/util/i18n.php are identical
 diff -urBNs elefant-elefant_2_0_8_stable/apps/admin/handlers/util/minimal-grid.php elefant-elefant_2_0_9_stable/apps/admin/handlers/util/minimal-grid.php
 --- elefant-elefant_2_0_8_stable/apps/admin/handlers/util/minimal-grid.php	2018-12-09 10:45:35.000000000 -0600
-+++ elefant-elefant_2_0_9_stable/apps/admin/handlers/util/minimal-grid.php	2019-04-07 15:34:20.000000000 -0500
++++ elefant-elefant_2_0_9_stable/apps/admin/handlers/util/minimal-grid.php	2019-04-07 17:03:01.000000000 -0500
 @@ -29,29 +29,42 @@
   *
   * ### Available classes:
@@ -329,7 +329,7 @@ Files elefant-elefant_2_0_8_stable/apps/admin/js/jquery.jgrowl.min.js and elefan
 Files elefant-elefant_2_0_8_stable/apps/admin/js/jquery.notifier.js and elefant-elefant_2_0_9_stable/apps/admin/js/jquery.notifier.js are identical
 diff -urBNs elefant-elefant_2_0_8_stable/apps/admin/js/jquery.search.js elefant-elefant_2_0_9_stable/apps/admin/js/jquery.search.js
 --- elefant-elefant_2_0_8_stable/apps/admin/js/jquery.search.js	2018-12-09 10:45:35.000000000 -0600
-+++ elefant-elefant_2_0_9_stable/apps/admin/js/jquery.search.js	2019-04-07 15:34:20.000000000 -0500
++++ elefant-elefant_2_0_9_stable/apps/admin/js/jquery.search.js	2019-04-07 17:03:01.000000000 -0500
 @@ -60,12 +60,18 @@
  			
  			var $this = $(this),
@@ -507,7 +507,7 @@ Files elefant-elefant_2_0_8_stable/apps/blog/handlers/import.php and elefant-ele
 Files elefant-elefant_2_0_8_stable/apps/blog/handlers/index.php and elefant-elefant_2_0_9_stable/apps/blog/handlers/index.php are identical
 diff -urBNs elefant-elefant_2_0_8_stable/apps/blog/handlers/post.php elefant-elefant_2_0_9_stable/apps/blog/handlers/post.php
 --- elefant-elefant_2_0_8_stable/apps/blog/handlers/post.php	2018-12-09 10:45:35.000000000 -0600
-+++ elefant-elefant_2_0_9_stable/apps/blog/handlers/post.php	2019-04-07 15:34:20.000000000 -0500
++++ elefant-elefant_2_0_9_stable/apps/blog/handlers/post.php	2019-04-07 17:03:01.000000000 -0500
 @@ -97,7 +97,7 @@
  if ($post->thumbnail !== '') {
  	$page->add_meta (
@@ -548,7 +548,7 @@ Files elefant-elefant_2_0_8_stable/apps/blog/lib/Pingomatic.php and elefant-elef
 Files elefant-elefant_2_0_8_stable/apps/blog/lib/Twitter.php and elefant-elefant_2_0_9_stable/apps/blog/lib/Twitter.php are identical
 diff -urBNs elefant-elefant_2_0_8_stable/apps/blog/lib/markdown.php elefant-elefant_2_0_9_stable/apps/blog/lib/markdown.php
 --- elefant-elefant_2_0_8_stable/apps/blog/lib/markdown.php	2018-12-09 10:45:35.000000000 -0600
-+++ elefant-elefant_2_0_9_stable/apps/blog/lib/markdown.php	2019-04-07 15:34:20.000000000 -0500
++++ elefant-elefant_2_0_9_stable/apps/blog/lib/markdown.php	2019-04-07 17:03:01.000000000 -0500
 @@ -252,7 +252,7 @@
  	var $escape_chars_re;
  
@@ -631,7 +631,7 @@ Files elefant-elefant_2_0_8_stable/apps/blog/views/import.html and elefant-elefa
 Files elefant-elefant_2_0_8_stable/apps/blog/views/index.html and elefant-elefant_2_0_9_stable/apps/blog/views/index.html are identical
 diff -urBNs elefant-elefant_2_0_8_stable/apps/blog/views/post.html elefant-elefant_2_0_9_stable/apps/blog/views/post.html
 --- elefant-elefant_2_0_8_stable/apps/blog/views/post.html	2018-12-09 10:45:35.000000000 -0600
-+++ elefant-elefant_2_0_9_stable/apps/blog/views/post.html	2019-04-07 15:34:20.000000000 -0500
++++ elefant-elefant_2_0_9_stable/apps/blog/views/post.html	2019-04-07 17:03:01.000000000 -0500
 @@ -18,7 +18,7 @@
  </div>
  {% end %}
@@ -1156,7 +1156,7 @@ Files elefant-elefant_2_0_8_stable/apps/filemanager/js/mediaelement/renderers/vi
 Files elefant-elefant_2_0_8_stable/apps/filemanager/js/swfobject.js and elefant-elefant_2_0_9_stable/apps/filemanager/js/swfobject.js are identical
 diff -urBNs elefant-elefant_2_0_8_stable/apps/filemanager/lib/API.php elefant-elefant_2_0_9_stable/apps/filemanager/lib/API.php
 --- elefant-elefant_2_0_8_stable/apps/filemanager/lib/API.php	2018-12-09 10:45:35.000000000 -0600
-+++ elefant-elefant_2_0_9_stable/apps/filemanager/lib/API.php	2019-04-07 15:34:20.000000000 -0500
++++ elefant-elefant_2_0_9_stable/apps/filemanager/lib/API.php	2019-04-07 17:03:01.000000000 -0500
 @@ -93,6 +93,10 @@
  
  		$is_folder = FileManager::verify_folder ($file) ? true : false;
@@ -1170,7 +1170,7 @@ diff -urBNs elefant-elefant_2_0_8_stable/apps/filemanager/lib/API.php elefant-el
  		}
 diff -urBNs elefant-elefant_2_0_8_stable/apps/filemanager/lib/FileManager.php elefant-elefant_2_0_9_stable/apps/filemanager/lib/FileManager.php
 --- elefant-elefant_2_0_8_stable/apps/filemanager/lib/FileManager.php	2018-12-09 10:45:35.000000000 -0600
-+++ elefant-elefant_2_0_9_stable/apps/filemanager/lib/FileManager.php	2019-04-07 15:34:20.000000000 -0500
++++ elefant-elefant_2_0_9_stable/apps/filemanager/lib/FileManager.php	2019-04-07 17:03:01.000000000 -0500
 @@ -160,7 +160,7 @@
  		} elseif (! self::verify_file ($file)) {
  			self::$error = __ ('File not found');
@@ -1341,7 +1341,7 @@ Files elefant-elefant_2_0_8_stable/apps/translator/views/sources.html and elefan
 Files elefant-elefant_2_0_8_stable/apps/user/conf/acl.php and elefant-elefant_2_0_9_stable/apps/user/conf/acl.php are identical
 diff -urBNs elefant-elefant_2_0_8_stable/apps/user/conf/config.php elefant-elefant_2_0_9_stable/apps/user/conf/config.php
 --- elefant-elefant_2_0_8_stable/apps/user/conf/config.php	2018-12-09 10:45:35.000000000 -0600
-+++ elefant-elefant_2_0_9_stable/apps/user/conf/config.php	2019-04-07 15:34:20.000000000 -0500
++++ elefant-elefant_2_0_9_stable/apps/user/conf/config.php	2019-04-07 17:03:01.000000000 -0500
 @@ -52,6 +52,7 @@
  user/login = user/login
  user/login/newuser = user/login/newuser
@@ -1402,7 +1402,7 @@ Files elefant-elefant_2_0_8_stable/apps/user/handlers/logout.php and elefant-ele
 Files elefant-elefant_2_0_8_stable/apps/user/handlers/newpass.php and elefant-elefant_2_0_9_stable/apps/user/handlers/newpass.php are identical
 diff -urBNs elefant-elefant_2_0_8_stable/apps/user/handlers/recover.php elefant-elefant_2_0_9_stable/apps/user/handlers/recover.php
 --- elefant-elefant_2_0_8_stable/apps/user/handlers/recover.php	2018-12-09 10:45:35.000000000 -0600
-+++ elefant-elefant_2_0_9_stable/apps/user/handlers/recover.php	2019-04-07 15:34:20.000000000 -0500
++++ elefant-elefant_2_0_9_stable/apps/user/handlers/recover.php	2019-04-07 17:03:01.000000000 -0500
 @@ -4,6 +4,10 @@
   * Password recovery form for users who forgot their passwords.
   */
@@ -1444,7 +1444,7 @@ Files elefant-elefant_2_0_8_stable/apps/user/lib/API/Note.php and elefant-elefan
 Files elefant-elefant_2_0_8_stable/apps/user/lib/Auth/Basic.php and elefant-elefant_2_0_9_stable/apps/user/lib/Auth/Basic.php are identical
 diff -urBNs elefant-elefant_2_0_8_stable/apps/user/lib/Auth/HMAC.php elefant-elefant_2_0_9_stable/apps/user/lib/Auth/HMAC.php
 --- elefant-elefant_2_0_8_stable/apps/user/lib/Auth/HMAC.php	2018-12-09 10:45:35.000000000 -0600
-+++ elefant-elefant_2_0_9_stable/apps/user/lib/Auth/HMAC.php	2019-04-07 15:34:20.000000000 -0500
++++ elefant-elefant_2_0_9_stable/apps/user/lib/Auth/HMAC.php	2019-04-07 17:03:01.000000000 -0500
 @@ -110,6 +110,7 @@
  
  		// Compare our hash calculation with the one given
@@ -9360,7 +9360,7 @@ Files elefant-elefant_2_0_8_stable/conf/config.php and elefant-elefant_2_0_9_sta
 Files elefant-elefant_2_0_8_stable/conf/defaults.php and elefant-elefant_2_0_9_stable/conf/defaults.php are identical
 diff -urBNs elefant-elefant_2_0_8_stable/conf/envmap.php elefant-elefant_2_0_9_stable/conf/envmap.php
 --- elefant-elefant_2_0_8_stable/conf/envmap.php	1969-12-31 18:00:00.000000000 -0600
-+++ elefant-elefant_2_0_9_stable/conf/envmap.php	2019-04-07 15:34:20.000000000 -0500
++++ elefant-elefant_2_0_9_stable/conf/envmap.php	2019-04-07 17:03:03.000000000 -0500
 @@ -0,0 +1,25 @@
 +; <?php /*
 +
@@ -9399,12 +9399,17 @@ Files elefant-elefant_2_0_8_stable/conf/site.db and elefant-elefant_2_0_9_stable
 Files elefant-elefant_2_0_8_stable/conf/test.php and elefant-elefant_2_0_9_stable/conf/test.php are identical
 Files elefant-elefant_2_0_8_stable/conf/tools.default.php and elefant-elefant_2_0_9_stable/conf/tools.default.php are identical
 Files elefant-elefant_2_0_8_stable/conf/tools.php and elefant-elefant_2_0_9_stable/conf/tools.php are identical
-Files elefant-elefant_2_0_8_stable/conf/version.php and elefant-elefant_2_0_9_stable/conf/version.php are identical
+diff -urBNs elefant-elefant_2_0_8_stable/conf/version.php elefant-elefant_2_0_9_stable/conf/version.php
+--- elefant-elefant_2_0_8_stable/conf/version.php	2018-12-09 10:45:35.000000000 -0600
++++ elefant-elefant_2_0_9_stable/conf/version.php	2019-04-07 17:03:03.000000000 -0500
+@@ -1 +1 @@
+-<?php define ('ELEFANT_VERSION', '2.0.8');
++<?php define ('ELEFANT_VERSION', '2.0.9');
 Files elefant-elefant_2_0_8_stable/elefant and elefant-elefant_2_0_9_stable/elefant are identical
 Files elefant-elefant_2_0_8_stable/favicon.ico and elefant-elefant_2_0_9_stable/favicon.ico are identical
 diff -urBNs elefant-elefant_2_0_8_stable/files/.htaccess elefant-elefant_2_0_9_stable/files/.htaccess
 --- elefant-elefant_2_0_8_stable/files/.htaccess	2018-12-09 10:45:35.000000000 -0600
-+++ elefant-elefant_2_0_9_stable/files/.htaccess	2019-04-07 15:34:20.000000000 -0500
++++ elefant-elefant_2_0_9_stable/files/.htaccess	2019-04-07 17:03:03.000000000 -0500
 @@ -1,2 +1,6 @@
  Options -Indexes
 -php_flag engine off
@@ -9512,7 +9517,7 @@ Files elefant-elefant_2_0_8_stable/lib/Debugger.php and elefant-elefant_2_0_9_st
 Files elefant-elefant_2_0_8_stable/lib/ExtendedModel.php and elefant-elefant_2_0_9_stable/lib/ExtendedModel.php are identical
 diff -urBNs elefant-elefant_2_0_8_stable/lib/Form.php elefant-elefant_2_0_9_stable/lib/Form.php
 --- elefant-elefant_2_0_8_stable/lib/Form.php	2018-12-09 10:45:35.000000000 -0600
-+++ elefant-elefant_2_0_9_stable/lib/Form.php	2019-04-07 15:34:20.000000000 -0500
++++ elefant-elefant_2_0_9_stable/lib/Form.php	2019-04-07 17:03:03.000000000 -0500
 @@ -183,7 +183,7 @@
  	 *     $f = new Form ('post'); // POST requests but no Controller or rules
  	 *     $f = new Form ('post', $this); // POST and Controller set
@@ -9525,7 +9530,7 @@ diff -urBNs elefant-elefant_2_0_8_stable/lib/Form.php elefant-elefant_2_0_9_stab
 Files elefant-elefant_2_0_8_stable/lib/FrontController.php and elefant-elefant_2_0_9_stable/lib/FrontController.php are identical
 diff -urBNs elefant-elefant_2_0_8_stable/lib/Functions.php elefant-elefant_2_0_9_stable/lib/Functions.php
 --- elefant-elefant_2_0_8_stable/lib/Functions.php	2018-12-09 10:45:35.000000000 -0600
-+++ elefant-elefant_2_0_9_stable/lib/Functions.php	2019-04-07 15:34:20.000000000 -0500
++++ elefant-elefant_2_0_9_stable/lib/Functions.php	2019-04-07 17:03:03.000000000 -0500
 @@ -92,58 +92,77 @@
  		} else {
  			$conf = parse_ini_file ('conf/config.php', true);
@@ -9639,7 +9644,7 @@ Files elefant-elefant_2_0_8_stable/lib/MemcacheRedis.php and elefant-elefant_2_0
 Files elefant-elefant_2_0_8_stable/lib/MemcacheXCache.php and elefant-elefant_2_0_9_stable/lib/MemcacheXCache.php are identical
 diff -urBNs elefant-elefant_2_0_8_stable/lib/Model.php elefant-elefant_2_0_9_stable/lib/Model.php
 --- elefant-elefant_2_0_8_stable/lib/Model.php	2018-12-09 10:45:35.000000000 -0600
-+++ elefant-elefant_2_0_9_stable/lib/Model.php	2019-04-07 15:34:20.000000000 -0500
++++ elefant-elefant_2_0_9_stable/lib/Model.php	2019-04-07 17:03:03.000000000 -0500
 @@ -630,7 +630,7 @@
  
  		if (count ($exact) > 0) {
@@ -9710,7 +9715,7 @@ Files elefant-elefant_2_0_8_stable/lib/Product.php and elefant-elefant_2_0_9_sta
 Files elefant-elefant_2_0_8_stable/lib/Restful.php and elefant-elefant_2_0_9_stable/lib/Restful.php are identical
 diff -urBNs elefant-elefant_2_0_8_stable/lib/Template.php elefant-elefant_2_0_9_stable/lib/Template.php
 --- elefant-elefant_2_0_8_stable/lib/Template.php	2018-12-09 10:45:35.000000000 -0600
-+++ elefant-elefant_2_0_9_stable/lib/Template.php	2019-04-07 15:34:20.000000000 -0500
++++ elefant-elefant_2_0_9_stable/lib/Template.php	2019-04-07 17:03:03.000000000 -0500
 @@ -184,6 +184,13 @@
   *
   *     {{ timestamp|date ('F j', %s) }}
@@ -9918,7 +9923,7 @@ Files elefant-elefant_2_0_8_stable/lib/vendor/Zend/Validate/StringLength.php and
 Files elefant-elefant_2_0_8_stable/lib/vendor/Zend/Validate.php and elefant-elefant_2_0_9_stable/lib/vendor/Zend/Validate.php are identical
 diff -urBNs elefant-elefant_2_0_8_stable/nginx.conf elefant-elefant_2_0_9_stable/nginx.conf
 --- elefant-elefant_2_0_8_stable/nginx.conf	2018-12-09 10:45:35.000000000 -0600
-+++ elefant-elefant_2_0_9_stable/nginx.conf	2019-04-07 15:34:20.000000000 -0500
++++ elefant-elefant_2_0_9_stable/nginx.conf	2019-04-07 17:03:03.000000000 -0500
 @@ -38,6 +38,9 @@
  	deny all;
  	return 403;
