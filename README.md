@@ -40,7 +40,8 @@ This will contain the following data structure:
 
 ## How to update for new releases
 
-First, make sure you've updated `conf/version.php` and pushed the change to GitHub.
+First, make sure you've updated `conf/version.php` and `composer.json` and pushed the
+changes to GitHub.
 
 Next, tag the release on GitHub under Releases with a writeup of the changes.
 
