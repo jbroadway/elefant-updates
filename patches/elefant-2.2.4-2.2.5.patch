@@ -251,7 +251,7 @@ Files elefant-elefant_2_2_4_stable/apps/admin/models/Webpage.php and elefant-ele
 Files elefant-elefant_2_2_4_stable/apps/admin/views/add/head.html and elefant-elefant_2_2_5_stable/apps/admin/views/add/head.html are identical
 diff -urBNs elefant-elefant_2_2_4_stable/apps/admin/views/add.html elefant-elefant_2_2_5_stable/apps/admin/views/add.html
 --- elefant-elefant_2_2_4_stable/apps/admin/views/add.html	2020-09-27 18:01:46.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/apps/admin/views/add.html	2020-11-19 16:15:33.000000000 -0600
++++ elefant-elefant_2_2_5_stable/apps/admin/views/add.html	2020-11-19 16:25:03.000000000 -0600
 @@ -27,7 +27,7 @@
  <p>{"Page title"}<br /><input type="text" name="title" size="50" value="{{ title }}" onblur="webpage_add_title_to_id (this.form)" />
  <span class="notice" id="title-notice">{"You must enter a page title."}</span></p>
@@ -267,7 +267,7 @@ Files elefant-elefant_2_2_4_stable/apps/admin/views/default-validation.html and 
 Files elefant-elefant_2_2_4_stable/apps/admin/views/edit/head.html and elefant-elefant_2_2_5_stable/apps/admin/views/edit/head.html are identical
 diff -urBNs elefant-elefant_2_2_4_stable/apps/admin/views/edit.html elefant-elefant_2_2_5_stable/apps/admin/views/edit.html
 --- elefant-elefant_2_2_4_stable/apps/admin/views/edit.html	2020-09-27 18:01:46.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/apps/admin/views/edit.html	2020-11-19 16:15:33.000000000 -0600
++++ elefant-elefant_2_2_5_stable/apps/admin/views/edit.html	2020-11-19 16:25:03.000000000 -0600
 @@ -29,7 +29,7 @@
  <p>{"Page title"}<br /><input type="text" name="title" size="50" value="{{ title|quotes }}" onblur="webpage_add_title_to_id (this.form)" />
  <span class="notice" id="title-notice">{"You must enter a page title."}</span></p>
@@ -351,7 +351,7 @@ Files elefant-elefant_2_2_4_stable/apps/blog/handlers/add.php and elefant-elefan
 Files elefant-elefant_2_2_4_stable/apps/blog/handlers/admin.php and elefant-elefant_2_2_5_stable/apps/blog/handlers/admin.php are identical
 diff -urBNs elefant-elefant_2_2_4_stable/apps/blog/handlers/archive.php elefant-elefant_2_2_5_stable/apps/blog/handlers/archive.php
 --- elefant-elefant_2_2_4_stable/apps/blog/handlers/archive.php	2020-09-27 18:01:46.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/apps/blog/handlers/archive.php	2020-11-19 16:15:33.000000000 -0600
++++ elefant-elefant_2_2_5_stable/apps/blog/handlers/archive.php	2020-11-19 16:25:03.000000000 -0600
 @@ -70,7 +70,7 @@
  $page->title = $months[$month - 1] . ' ' . $tpl->sanitize ($year);
  
@@ -365,7 +365,7 @@ Files elefant-elefant_2_2_4_stable/apps/blog/handlers/archives.php and elefant-e
 Files elefant-elefant_2_2_4_stable/apps/blog/handlers/bgsave.php and elefant-elefant_2_2_5_stable/apps/blog/handlers/bgsave.php are identical
 diff -urBNs elefant-elefant_2_2_4_stable/apps/blog/handlers/by.php elefant-elefant_2_2_5_stable/apps/blog/handlers/by.php
 --- elefant-elefant_2_2_4_stable/apps/blog/handlers/by.php	2020-09-27 18:01:46.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/apps/blog/handlers/by.php	2020-11-19 16:15:33.000000000 -0600
++++ elefant-elefant_2_2_5_stable/apps/blog/handlers/by.php	2020-11-19 16:25:03.000000000 -0600
 @@ -63,7 +63,7 @@
  $page->title = __ ('Posts by %s', $tpl->sanitize ($page->author));
  
@@ -377,7 +377,7 @@ diff -urBNs elefant-elefant_2_2_4_stable/apps/blog/handlers/by.php elefant-elefa
  $page->add_script (sprintf (
 diff -urBNs elefant-elefant_2_2_4_stable/apps/blog/handlers/bymonth.php elefant-elefant_2_2_5_stable/apps/blog/handlers/bymonth.php
 --- elefant-elefant_2_2_4_stable/apps/blog/handlers/bymonth.php	2020-09-27 18:01:46.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/apps/blog/handlers/bymonth.php	2020-11-19 16:15:33.000000000 -0600
++++ elefant-elefant_2_2_5_stable/apps/blog/handlers/bymonth.php	2020-11-19 16:25:03.000000000 -0600
 @@ -44,7 +44,7 @@
  ));
  
@@ -394,7 +394,7 @@ Files elefant-elefant_2_2_4_stable/apps/blog/handlers/disqus/comments.php and el
 Files elefant-elefant_2_2_4_stable/apps/blog/handlers/edit.php and elefant-elefant_2_2_5_stable/apps/blog/handlers/edit.php are identical
 diff -urBNs elefant-elefant_2_2_4_stable/apps/blog/handlers/feed.json.php elefant-elefant_2_2_5_stable/apps/blog/handlers/feed.json.php
 --- elefant-elefant_2_2_4_stable/apps/blog/handlers/feed.json.php	2020-09-27 18:01:46.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/apps/blog/handlers/feed.json.php	2020-11-19 16:15:33.000000000 -0600
++++ elefant-elefant_2_2_5_stable/apps/blog/handlers/feed.json.php	2020-11-19 16:25:03.000000000 -0600
 @@ -16,7 +16,7 @@
  		'title' => $page->title,
  		'home_page_url' => $this->absolutize ('/blog'),
@@ -421,7 +421,7 @@ Files elefant-elefant_2_2_4_stable/apps/blog/handlers/import/wordpress.php and e
 Files elefant-elefant_2_2_4_stable/apps/blog/handlers/import.php and elefant-elefant_2_2_5_stable/apps/blog/handlers/import.php are identical
 diff -urBNs elefant-elefant_2_2_4_stable/apps/blog/handlers/index.php elefant-elefant_2_2_5_stable/apps/blog/handlers/index.php
 --- elefant-elefant_2_2_4_stable/apps/blog/handlers/index.php	2020-09-27 18:01:46.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/apps/blog/handlers/index.php	2020-11-19 16:15:33.000000000 -0600
++++ elefant-elefant_2_2_5_stable/apps/blog/handlers/index.php	2020-11-19 16:25:03.000000000 -0600
 @@ -102,7 +102,7 @@
  }
  
@@ -433,7 +433,7 @@ diff -urBNs elefant-elefant_2_2_4_stable/apps/blog/handlers/index.php elefant-el
  $page->add_script (sprintf (
 diff -urBNs elefant-elefant_2_2_4_stable/apps/blog/handlers/post.php elefant-elefant_2_2_5_stable/apps/blog/handlers/post.php
 --- elefant-elefant_2_2_4_stable/apps/blog/handlers/post.php	2020-09-27 18:01:46.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/apps/blog/handlers/post.php	2020-11-19 16:15:33.000000000 -0600
++++ elefant-elefant_2_2_5_stable/apps/blog/handlers/post.php	2020-11-19 16:25:03.000000000 -0600
 @@ -84,7 +84,7 @@
  }
  
@@ -463,7 +463,7 @@ diff -urBNs elefant-elefant_2_2_4_stable/apps/blog/handlers/post.php elefant-ele
 Files elefant-elefant_2_2_4_stable/apps/blog/handlers/postsfeed.php and elefant-elefant_2_2_5_stable/apps/blog/handlers/postsfeed.php are identical
 diff -urBNs elefant-elefant_2_2_4_stable/apps/blog/handlers/preview.php elefant-elefant_2_2_5_stable/apps/blog/handlers/preview.php
 --- elefant-elefant_2_2_4_stable/apps/blog/handlers/preview.php	2020-09-27 18:01:46.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/apps/blog/handlers/preview.php	2020-11-19 16:15:33.000000000 -0600
++++ elefant-elefant_2_2_5_stable/apps/blog/handlers/preview.php	2020-11-19 16:25:03.000000000 -0600
 @@ -42,7 +42,7 @@
  }
  
@@ -477,7 +477,7 @@ Files elefant-elefant_2_2_4_stable/apps/blog/handlers/publish-queue.php and elef
 Files elefant-elefant_2_2_4_stable/apps/blog/handlers/related.php and elefant-elefant_2_2_5_stable/apps/blog/handlers/related.php are identical
 diff -urBNs elefant-elefant_2_2_4_stable/apps/blog/handlers/rss.php elefant-elefant_2_2_5_stable/apps/blog/handlers/rss.php
 --- elefant-elefant_2_2_4_stable/apps/blog/handlers/rss.php	2020-09-27 18:01:46.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/apps/blog/handlers/rss.php	2020-11-19 16:15:33.000000000 -0600
++++ elefant-elefant_2_2_5_stable/apps/blog/handlers/rss.php	2020-11-19 16:25:03.000000000 -0600
 @@ -34,7 +34,7 @@
  		}
  		
@@ -491,7 +491,7 @@ Files elefant-elefant_2_2_4_stable/apps/blog/handlers/rssviewer.php and elefant-
 Files elefant-elefant_2_2_4_stable/apps/blog/handlers/settings.php and elefant-elefant_2_2_5_stable/apps/blog/handlers/settings.php are identical
 diff -urBNs elefant-elefant_2_2_4_stable/apps/blog/handlers/tag.php elefant-elefant_2_2_5_stable/apps/blog/handlers/tag.php
 --- elefant-elefant_2_2_4_stable/apps/blog/handlers/tag.php	2020-09-27 18:01:46.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/apps/blog/handlers/tag.php	2020-11-19 16:15:33.000000000 -0600
++++ elefant-elefant_2_2_5_stable/apps/blog/handlers/tag.php	2020-11-19 16:25:03.000000000 -0600
 @@ -63,7 +63,7 @@
  $page->title = __ ('Tagged: %s', $tpl->sanitize ($page->tag));
  
@@ -504,7 +504,7 @@ diff -urBNs elefant-elefant_2_2_4_stable/apps/blog/handlers/tag.php elefant-elef
 Files elefant-elefant_2_2_4_stable/apps/blog/handlers/taglist.php and elefant-elefant_2_2_5_stable/apps/blog/handlers/taglist.php are identical
 diff -urBNs elefant-elefant_2_2_4_stable/apps/blog/handlers/tags.php elefant-elefant_2_2_5_stable/apps/blog/handlers/tags.php
 --- elefant-elefant_2_2_4_stable/apps/blog/handlers/tags.php	2020-09-27 18:01:46.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/apps/blog/handlers/tags.php	2020-11-19 16:15:33.000000000 -0600
++++ elefant-elefant_2_2_5_stable/apps/blog/handlers/tags.php	2020-11-19 16:25:03.000000000 -0600
 @@ -29,7 +29,7 @@
  echo $tpl->render ('blog/tags', $pg);
  
@@ -570,7 +570,7 @@ Files elefant-elefant_2_2_4_stable/apps/blog/views/bymonth.html and elefant-elef
 Files elefant-elefant_2_2_4_stable/apps/blog/views/disqus/commentcount.html and elefant-elefant_2_2_5_stable/apps/blog/views/disqus/commentcount.html are identical
 diff -urBNs elefant-elefant_2_2_4_stable/apps/blog/views/disqus/comments.html elefant-elefant_2_2_5_stable/apps/blog/views/disqus/comments.html
 --- elefant-elefant_2_2_4_stable/apps/blog/views/disqus/comments.html	2020-09-27 18:01:46.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/apps/blog/views/disqus/comments.html	2020-11-19 16:15:33.000000000 -0600
++++ elefant-elefant_2_2_5_stable/apps/blog/views/disqus/comments.html	2020-11-19 16:25:03.000000000 -0600
 @@ -3,7 +3,7 @@
      var disqus_shortname = '{{shortname}}';
      var disqus_title = '{{title}}';
@@ -594,7 +594,7 @@ Files elefant-elefant_2_2_4_stable/apps/blog/views/post.html and elefant-elefant
 Files elefant-elefant_2_2_4_stable/apps/blog/views/related.html and elefant-elefant_2_2_5_stable/apps/blog/views/related.html are identical
 diff -urBNs elefant-elefant_2_2_4_stable/apps/blog/views/rss.html elefant-elefant_2_2_5_stable/apps/blog/views/rss.html
 --- elefant-elefant_2_2_4_stable/apps/blog/views/rss.html	2020-09-27 18:01:46.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/apps/blog/views/rss.html	2020-11-19 16:15:33.000000000 -0600
++++ elefant-elefant_2_2_5_stable/apps/blog/views/rss.html	2020-11-19 16:25:03.000000000 -0600
 @@ -8,11 +8,11 @@
  	xmlns="http://purl.org/rss/1.0/"
  >
@@ -1179,7 +1179,7 @@ Files elefant-elefant_2_2_4_stable/apps/navigation/handlers/breadcrumb.php and e
 Files elefant-elefant_2_2_4_stable/apps/navigation/handlers/contextual.php and elefant-elefant_2_2_5_stable/apps/navigation/handlers/contextual.php are identical
 diff -urBNs elefant-elefant_2_2_4_stable/apps/navigation/handlers/cookie.php elefant-elefant_2_2_5_stable/apps/navigation/handlers/cookie.php
 --- elefant-elefant_2_2_4_stable/apps/navigation/handlers/cookie.php	2020-09-27 18:01:46.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/apps/navigation/handlers/cookie.php	2020-11-19 16:15:33.000000000 -0600
++++ elefant-elefant_2_2_5_stable/apps/navigation/handlers/cookie.php	2020-11-19 16:25:03.000000000 -0600
 @@ -17,9 +17,9 @@
  $domain = $domain ? $domain : conf ('General', 'session_domain');
  
@@ -1235,7 +1235,7 @@ Files elefant-elefant_2_2_4_stable/apps/navigation/js/tree-drag-drop/tree-drag-d
 Files elefant-elefant_2_2_4_stable/apps/navigation/lib/Functions.php and elefant-elefant_2_2_5_stable/apps/navigation/lib/Functions.php are identical
 diff -urBNs elefant-elefant_2_2_4_stable/apps/navigation/lib/Link.php elefant-elefant_2_2_5_stable/apps/navigation/lib/Link.php
 --- elefant-elefant_2_2_4_stable/apps/navigation/lib/Link.php	2020-09-27 18:01:46.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/apps/navigation/lib/Link.php	2020-11-19 16:15:33.000000000 -0600
++++ elefant-elefant_2_2_5_stable/apps/navigation/lib/Link.php	2020-11-19 16:25:03.000000000 -0600
 @@ -210,7 +210,7 @@
  	 * Get the domain minus any subdomain.
  	 */
@@ -1261,7 +1261,7 @@ Files elefant-elefant_2_2_4_stable/apps/social/css/sharingbuttons.css and elefan
 Files elefant-elefant_2_2_4_stable/apps/social/handlers/cookienotice.php and elefant-elefant_2_2_5_stable/apps/social/handlers/cookienotice.php are identical
 diff -urBNs elefant-elefant_2_2_4_stable/apps/social/handlers/facebook/commentcount.php elefant-elefant_2_2_5_stable/apps/social/handlers/facebook/commentcount.php
 --- elefant-elefant_2_2_4_stable/apps/social/handlers/facebook/commentcount.php	2020-09-27 18:01:46.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/apps/social/handlers/facebook/commentcount.php	2020-11-19 16:15:33.000000000 -0600
++++ elefant-elefant_2_2_5_stable/apps/social/handlers/facebook/commentcount.php	2020-11-19 16:25:03.000000000 -0600
 @@ -23,6 +23,6 @@
  }
  
@@ -1272,7 +1272,7 @@ diff -urBNs elefant-elefant_2_2_4_stable/apps/social/handlers/facebook/commentco
  echo $tpl->render ('social/facebook/commentcount', $data);
 diff -urBNs elefant-elefant_2_2_4_stable/apps/social/handlers/facebook/comments.php elefant-elefant_2_2_5_stable/apps/social/handlers/facebook/comments.php
 --- elefant-elefant_2_2_4_stable/apps/social/handlers/facebook/comments.php	2020-09-27 18:01:46.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/apps/social/handlers/facebook/comments.php	2020-11-19 16:15:33.000000000 -0600
++++ elefant-elefant_2_2_5_stable/apps/social/handlers/facebook/comments.php	2020-11-19 16:25:03.000000000 -0600
 @@ -24,6 +24,6 @@
  
  $data['url'] = isset ($data['url'])
@@ -1284,7 +1284,7 @@ diff -urBNs elefant-elefant_2_2_4_stable/apps/social/handlers/facebook/comments.
 Files elefant-elefant_2_2_4_stable/apps/social/handlers/facebook/init.php and elefant-elefant_2_2_5_stable/apps/social/handlers/facebook/init.php are identical
 diff -urBNs elefant-elefant_2_2_4_stable/apps/social/handlers/facebook/like-box.php elefant-elefant_2_2_5_stable/apps/social/handlers/facebook/like-box.php
 --- elefant-elefant_2_2_4_stable/apps/social/handlers/facebook/like-box.php	2020-09-27 18:01:46.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/apps/social/handlers/facebook/like-box.php	2020-11-19 16:15:33.000000000 -0600
++++ elefant-elefant_2_2_5_stable/apps/social/handlers/facebook/like-box.php	2020-11-19 16:25:03.000000000 -0600
 @@ -23,6 +23,6 @@
  }
  
@@ -1295,7 +1295,7 @@ diff -urBNs elefant-elefant_2_2_4_stable/apps/social/handlers/facebook/like-box.
  echo $tpl->render ('social/facebook/like-box', $data);
 diff -urBNs elefant-elefant_2_2_4_stable/apps/social/handlers/facebook/like.php elefant-elefant_2_2_5_stable/apps/social/handlers/facebook/like.php
 --- elefant-elefant_2_2_4_stable/apps/social/handlers/facebook/like.php	2020-09-27 18:01:46.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/apps/social/handlers/facebook/like.php	2020-11-19 16:15:33.000000000 -0600
++++ elefant-elefant_2_2_5_stable/apps/social/handlers/facebook/like.php	2020-11-19 16:25:03.000000000 -0600
 @@ -23,6 +23,6 @@
  }
  
@@ -1310,7 +1310,7 @@ Files elefant-elefant_2_2_4_stable/apps/social/handlers/google/init.php and elef
 Files elefant-elefant_2_2_4_stable/apps/social/handlers/google/maps.php and elefant-elefant_2_2_5_stable/apps/social/handlers/google/maps.php are identical
 diff -urBNs elefant-elefant_2_2_4_stable/apps/social/handlers/google/plusone.php elefant-elefant_2_2_5_stable/apps/social/handlers/google/plusone.php
 --- elefant-elefant_2_2_4_stable/apps/social/handlers/google/plusone.php	2020-09-27 18:01:46.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/apps/social/handlers/google/plusone.php	2020-11-19 16:15:33.000000000 -0600
++++ elefant-elefant_2_2_5_stable/apps/social/handlers/google/plusone.php	2020-11-19 16:25:03.000000000 -0600
 @@ -23,6 +23,6 @@
  }
  
@@ -1322,7 +1322,7 @@ diff -urBNs elefant-elefant_2_2_4_stable/apps/social/handlers/google/plusone.php
 Files elefant-elefant_2_2_4_stable/apps/social/handlers/index.php and elefant-elefant_2_2_5_stable/apps/social/handlers/index.php are identical
 diff -urBNs elefant-elefant_2_2_4_stable/apps/social/handlers/sharingbuttons.php elefant-elefant_2_2_5_stable/apps/social/handlers/sharingbuttons.php
 --- elefant-elefant_2_2_4_stable/apps/social/handlers/sharingbuttons.php	2020-09-27 18:01:46.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/apps/social/handlers/sharingbuttons.php	2020-11-19 16:15:33.000000000 -0600
++++ elefant-elefant_2_2_5_stable/apps/social/handlers/sharingbuttons.php	2020-11-19 16:25:03.000000000 -0600
 @@ -44,7 +44,7 @@
  
  if (strpos ($data['url'], '/') === 0) {
@@ -1337,7 +1337,7 @@ Files elefant-elefant_2_2_4_stable/apps/social/handlers/twitter/follow.php and e
 Files elefant-elefant_2_2_4_stable/apps/social/handlers/twitter/init.php and elefant-elefant_2_2_5_stable/apps/social/handlers/twitter/init.php are identical
 diff -urBNs elefant-elefant_2_2_4_stable/apps/social/handlers/twitter/tweet.php elefant-elefant_2_2_5_stable/apps/social/handlers/twitter/tweet.php
 --- elefant-elefant_2_2_4_stable/apps/social/handlers/twitter/tweet.php	2020-09-27 18:01:46.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/apps/social/handlers/twitter/tweet.php	2020-11-19 16:15:33.000000000 -0600
++++ elefant-elefant_2_2_5_stable/apps/social/handlers/twitter/tweet.php	2020-11-19 16:25:03.000000000 -0600
 @@ -28,6 +28,6 @@
  }
  
@@ -1348,7 +1348,7 @@ diff -urBNs elefant-elefant_2_2_4_stable/apps/social/handlers/twitter/tweet.php 
  echo $tpl->render ('social/twitter/tweet', $data);
 diff -urBNs elefant-elefant_2_2_4_stable/apps/social/handlers/twitter/tweetthis.php elefant-elefant_2_2_5_stable/apps/social/handlers/twitter/tweetthis.php
 --- elefant-elefant_2_2_4_stable/apps/social/handlers/twitter/tweetthis.php	2020-09-27 18:01:46.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/apps/social/handlers/twitter/tweetthis.php	2020-11-19 16:15:33.000000000 -0600
++++ elefant-elefant_2_2_5_stable/apps/social/handlers/twitter/tweetthis.php	2020-11-19 16:25:03.000000000 -0600
 @@ -22,6 +22,6 @@
  
  $data['url'] = ($data['url'] !== '')
@@ -1458,7 +1458,7 @@ Files elefant-elefant_2_2_4_stable/apps/user/handlers/import.php and elefant-ele
 Files elefant-elefant_2_2_4_stable/apps/user/handlers/index.php and elefant-elefant_2_2_5_stable/apps/user/handlers/index.php are identical
 diff -urBNs elefant-elefant_2_2_4_stable/apps/user/handlers/login/facebook.php elefant-elefant_2_2_5_stable/apps/user/handlers/login/facebook.php
 --- elefant-elefant_2_2_4_stable/apps/user/handlers/login/facebook.php	2020-09-27 18:01:46.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/apps/user/handlers/login/facebook.php	2020-11-19 16:15:33.000000000 -0600
++++ elefant-elefant_2_2_5_stable/apps/user/handlers/login/facebook.php	2020-11-19 16:25:03.000000000 -0600
 @@ -11,7 +11,7 @@
  
  $app_id = $appconf['Facebook']['application_id'];
@@ -1472,7 +1472,7 @@ Files elefant-elefant_2_2_4_stable/apps/user/handlers/login/google.php and elefa
 Files elefant-elefant_2_2_4_stable/apps/user/handlers/login/newuser.php and elefant-elefant_2_2_5_stable/apps/user/handlers/login/newuser.php are identical
 diff -urBNs elefant-elefant_2_2_4_stable/apps/user/handlers/login/openid.php elefant-elefant_2_2_5_stable/apps/user/handlers/login/openid.php
 --- elefant-elefant_2_2_4_stable/apps/user/handlers/login/openid.php	2020-09-27 18:01:46.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/apps/user/handlers/login/openid.php	2020-11-19 16:15:33.000000000 -0600
++++ elefant-elefant_2_2_5_stable/apps/user/handlers/login/openid.php	2020-11-19 16:25:03.000000000 -0600
 @@ -9,7 +9,7 @@
  	return;
  }
@@ -1516,7 +1516,7 @@ Files elefant-elefant_2_2_4_stable/apps/user/lib/API/Note.php and elefant-elefan
 Files elefant-elefant_2_2_4_stable/apps/user/lib/Auth/Basic.php and elefant-elefant_2_2_5_stable/apps/user/lib/Auth/Basic.php are identical
 diff -urBNs elefant-elefant_2_2_4_stable/apps/user/lib/Auth/HMAC.php elefant-elefant_2_2_5_stable/apps/user/lib/Auth/HMAC.php
 --- elefant-elefant_2_2_4_stable/apps/user/lib/Auth/HMAC.php	2020-09-27 18:01:46.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/apps/user/lib/Auth/HMAC.php	2020-11-19 16:15:33.000000000 -0600
++++ elefant-elefant_2_2_5_stable/apps/user/lib/Auth/HMAC.php	2020-11-19 16:25:03.000000000 -0600
 @@ -163,13 +163,13 @@
  		$data = '';
  		switch ($method) {
@@ -9391,7 +9391,7 @@ Files elefant-elefant_2_2_4_stable/apps/user/models/Note.php and elefant-elefant
 Files elefant-elefant_2_2_4_stable/apps/user/models/Session.php and elefant-elefant_2_2_5_stable/apps/user/models/Session.php are identical
 diff -urBNs elefant-elefant_2_2_4_stable/apps/user/models/User.php elefant-elefant_2_2_5_stable/apps/user/models/User.php
 --- elefant-elefant_2_2_4_stable/apps/user/models/User.php	2020-09-27 18:01:48.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/apps/user/models/User.php	2020-11-19 16:15:34.000000000 -0600
++++ elefant-elefant_2_2_5_stable/apps/user/models/User.php	2020-11-19 16:25:05.000000000 -0600
 @@ -191,9 +191,9 @@
  			$handler_class = conf ('General', 'session_save_handler');
  
@@ -9429,7 +9429,7 @@ Files elefant-elefant_2_2_4_stable/apps/user/views/details.html and elefant-elef
 Files elefant-elefant_2_2_4_stable/apps/user/views/edit.html and elefant-elefant_2_2_5_stable/apps/user/views/edit.html are identical
 diff -urBNs elefant-elefant_2_2_4_stable/apps/user/views/email/recover.html elefant-elefant_2_2_5_stable/apps/user/views/email/recover.html
 --- elefant-elefant_2_2_4_stable/apps/user/views/email/recover.html	2020-09-27 18:01:48.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/apps/user/views/email/recover.html	2020-11-19 16:15:34.000000000 -0600
++++ elefant-elefant_2_2_5_stable/apps/user/views/email/recover.html	2020-11-19 16:25:05.000000000 -0600
 @@ -3,7 +3,7 @@
  A request has been made to reset your password. You can verify your
  email address and reset your password at the following link:
@@ -9441,7 +9441,7 @@ diff -urBNs elefant-elefant_2_2_4_stable/apps/user/views/email/recover.html elef
  If you received this message in error, you can safely ignore it.
 diff -urBNs elefant-elefant_2_2_4_stable/apps/user/views/email/verification.html elefant-elefant_2_2_5_stable/apps/user/views/email/verification.html
 --- elefant-elefant_2_2_4_stable/apps/user/views/email/verification.html	2020-09-27 18:01:48.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/apps/user/views/email/verification.html	2020-11-19 16:15:34.000000000 -0600
++++ elefant-elefant_2_2_5_stable/apps/user/views/email/verification.html	2020-11-19 16:25:05.000000000 -0600
 @@ -6,7 +6,7 @@
  
  To verify your email address, click here:
@@ -9476,7 +9476,7 @@ Files elefant-elefant_2_2_4_stable/conf/config.php and elefant-elefant_2_2_5_sta
 Files elefant-elefant_2_2_4_stable/conf/defaults.php and elefant-elefant_2_2_5_stable/conf/defaults.php are identical
 diff -urBNs elefant-elefant_2_2_4_stable/conf/envmap.php elefant-elefant_2_2_5_stable/conf/envmap.php
 --- elefant-elefant_2_2_4_stable/conf/envmap.php	2020-09-27 18:01:48.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/conf/envmap.php	2020-11-19 16:15:34.000000000 -0600
++++ elefant-elefant_2_2_5_stable/conf/envmap.php	2020-11-19 16:25:05.000000000 -0600
 @@ -8,6 +8,9 @@
  ;
  ; Leave the defaults in the form `ENV_VAR = ENV_VAR`.
@@ -9498,7 +9498,12 @@ Files elefant-elefant_2_2_4_stable/conf/site.db and elefant-elefant_2_2_5_stable
 Files elefant-elefant_2_2_4_stable/conf/test.php and elefant-elefant_2_2_5_stable/conf/test.php are identical
 Files elefant-elefant_2_2_4_stable/conf/tools.default.php and elefant-elefant_2_2_5_stable/conf/tools.default.php are identical
 Files elefant-elefant_2_2_4_stable/conf/tools.php and elefant-elefant_2_2_5_stable/conf/tools.php are identical
-Files elefant-elefant_2_2_4_stable/conf/version.php and elefant-elefant_2_2_5_stable/conf/version.php are identical
+diff -urBNs elefant-elefant_2_2_4_stable/conf/version.php elefant-elefant_2_2_5_stable/conf/version.php
+--- elefant-elefant_2_2_4_stable/conf/version.php	2020-09-27 18:01:48.000000000 -0500
++++ elefant-elefant_2_2_5_stable/conf/version.php	2020-11-19 16:25:05.000000000 -0600
+@@ -1 +1 @@
+-<?php define ('ELEFANT_VERSION', '2.2.4');
++<?php define ('ELEFANT_VERSION', '2.2.5');
 Files elefant-elefant_2_2_4_stable/elefant and elefant-elefant_2_2_5_stable/elefant are identical
 Files elefant-elefant_2_2_4_stable/favicon.ico and elefant-elefant_2_2_5_stable/favicon.ico are identical
 Files elefant-elefant_2_2_4_stable/files/.htaccess and elefant-elefant_2_2_5_stable/files/.htaccess are identical
@@ -9555,7 +9560,7 @@ Files elefant-elefant_2_2_4_stable/js/jquery.password_strength.js and elefant-el
 Files elefant-elefant_2_2_4_stable/js/jquery.quickpager.js and elefant-elefant_2_2_5_stable/js/jquery.quickpager.js are identical
 diff -urBNs elefant-elefant_2_2_4_stable/js/jquery.verify_values.js elefant-elefant_2_2_5_stable/js/jquery.verify_values.js
 --- elefant-elefant_2_2_4_stable/js/jquery.verify_values.js	2020-09-27 18:01:48.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/js/jquery.verify_values.js	2020-11-19 16:15:34.000000000 -0600
++++ elefant-elefant_2_2_5_stable/js/jquery.verify_values.js	2020-11-19 16:25:05.000000000 -0600
 @@ -172,7 +172,7 @@
  				return true;
  			}
@@ -9587,7 +9592,7 @@ Files elefant-elefant_2_2_4_stable/layouts/admin/modal.html and elefant-elefant_
 Files elefant-elefant_2_2_4_stable/layouts/admin.html and elefant-elefant_2_2_5_stable/layouts/admin.html are identical
 diff -urBNs elefant-elefant_2_2_4_stable/layouts/minimal/blocks.css elefant-elefant_2_2_5_stable/layouts/minimal/blocks.css
 --- elefant-elefant_2_2_4_stable/layouts/minimal/blocks.css	1969-12-31 18:00:00.000000000 -0600
-+++ elefant-elefant_2_2_5_stable/layouts/minimal/blocks.css	2020-11-19 16:15:34.000000000 -0600
++++ elefant-elefant_2_2_5_stable/layouts/minimal/blocks.css	2020-11-19 16:25:05.000000000 -0600
 @@ -0,0 +1,9 @@
 +.block-outer.black {
 +	background-color: #000;
@@ -9602,7 +9607,7 @@ Files elefant-elefant_2_2_4_stable/layouts/minimal/inc/body.html and elefant-ele
 Files elefant-elefant_2_2_4_stable/layouts/minimal/inc/footer.html and elefant-elefant_2_2_5_stable/layouts/minimal/inc/footer.html are identical
 diff -urBNs elefant-elefant_2_2_4_stable/layouts/minimal/inc/head.html elefant-elefant_2_2_5_stable/layouts/minimal/inc/head.html
 --- elefant-elefant_2_2_4_stable/layouts/minimal/inc/head.html	2020-09-27 18:01:48.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/layouts/minimal/inc/head.html	2020-11-19 16:15:34.000000000 -0600
++++ elefant-elefant_2_2_5_stable/layouts/minimal/inc/head.html	2020-11-19 16:25:05.000000000 -0600
 @@ -7,6 +7,7 @@
  	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu+Condensed|Montserrat:400,700" />
  	{! admin/util/minimal-grid !}
@@ -9615,7 +9620,7 @@ Files elefant-elefant_2_2_4_stable/layouts/minimal/inc/index.html and elefant-el
 Files elefant-elefant_2_2_4_stable/layouts/minimal/inc/navbar.html and elefant-elefant_2_2_5_stable/layouts/minimal/inc/navbar.html are identical
 diff -urBNs elefant-elefant_2_2_4_stable/layouts/minimal/inc/single.html elefant-elefant_2_2_5_stable/layouts/minimal/inc/single.html
 --- elefant-elefant_2_2_4_stable/layouts/minimal/inc/single.html	2020-09-27 18:01:48.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/layouts/minimal/inc/single.html	2020-11-19 16:15:34.000000000 -0600
++++ elefant-elefant_2_2_5_stable/layouts/minimal/inc/single.html	2020-11-19 16:25:05.000000000 -0600
 @@ -1,6 +1,12 @@
 -<div class="e-row" id="body">
 +<div id="body">
@@ -9646,7 +9651,7 @@ Files elefant-elefant_2_2_4_stable/lib/Autoloader.php and elefant-elefant_2_2_5_
 Files elefant-elefant_2_2_4_stable/lib/CRUD.php and elefant-elefant_2_2_5_stable/lib/CRUD.php are identical
 diff -urBNs elefant-elefant_2_2_4_stable/lib/Cache.php elefant-elefant_2_2_5_stable/lib/Cache.php
 --- elefant-elefant_2_2_4_stable/lib/Cache.php	2020-09-27 18:01:48.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/lib/Cache.php	2020-11-19 16:15:34.000000000 -0600
++++ elefant-elefant_2_2_5_stable/lib/Cache.php	2020-11-19 16:25:05.000000000 -0600
 @@ -71,7 +71,12 @@
  			// Determine the backend
  			if ($backend === 'redis' && extension_loaded ('redis')) {
@@ -9663,7 +9668,7 @@ diff -urBNs elefant-elefant_2_2_4_stable/lib/Cache.php elefant-elefant_2_2_5_sta
  			} else {
 diff -urBNs elefant-elefant_2_2_4_stable/lib/Controller.php elefant-elefant_2_2_5_stable/lib/Controller.php
 --- elefant-elefant_2_2_4_stable/lib/Controller.php	2020-09-27 18:01:48.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/lib/Controller.php	2020-11-19 16:15:34.000000000 -0600
++++ elefant-elefant_2_2_5_stable/lib/Controller.php	2020-11-19 16:25:05.000000000 -0600
 @@ -679,7 +679,7 @@
  		}
  
@@ -9695,7 +9700,7 @@ Files elefant-elefant_2_2_4_stable/lib/DB.php and elefant-elefant_2_2_5_stable/l
 Files elefant-elefant_2_2_4_stable/lib/Debugger.php and elefant-elefant_2_2_5_stable/lib/Debugger.php are identical
 diff -urBNs elefant-elefant_2_2_4_stable/lib/Envconf.php elefant-elefant_2_2_5_stable/lib/Envconf.php
 --- elefant-elefant_2_2_4_stable/lib/Envconf.php	1969-12-31 18:00:00.000000000 -0600
-+++ elefant-elefant_2_2_5_stable/lib/Envconf.php	2020-11-19 16:15:34.000000000 -0600
++++ elefant-elefant_2_2_5_stable/lib/Envconf.php	2020-11-19 16:25:05.000000000 -0600
 @@ -0,0 +1,79 @@
 +<?php
 +
@@ -9780,7 +9785,7 @@ diff -urBNs elefant-elefant_2_2_4_stable/lib/Envconf.php elefant-elefant_2_2_5_s
 Files elefant-elefant_2_2_4_stable/lib/ExtendedModel.php and elefant-elefant_2_2_5_stable/lib/ExtendedModel.php are identical
 diff -urBNs elefant-elefant_2_2_4_stable/lib/Form.php elefant-elefant_2_2_5_stable/lib/Form.php
 --- elefant-elefant_2_2_4_stable/lib/Form.php	2020-09-27 18:01:48.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/lib/Form.php	2020-11-19 16:15:34.000000000 -0600
++++ elefant-elefant_2_2_5_stable/lib/Form.php	2020-11-19 16:25:05.000000000 -0600
 @@ -296,7 +296,7 @@
  		$o->_failed = $this->failed;
  		$o->_invalid = $this->invalid;
@@ -9802,7 +9807,7 @@ diff -urBNs elefant-elefant_2_2_4_stable/lib/Form.php elefant-elefant_2_2_5_stab
 Files elefant-elefant_2_2_4_stable/lib/FrontController.php and elefant-elefant_2_2_5_stable/lib/FrontController.php are identical
 diff -urBNs elefant-elefant_2_2_4_stable/lib/Functions.php elefant-elefant_2_2_5_stable/lib/Functions.php
 --- elefant-elefant_2_2_4_stable/lib/Functions.php	2020-09-27 18:01:48.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/lib/Functions.php	2020-11-19 16:15:34.000000000 -0600
++++ elefant-elefant_2_2_5_stable/lib/Functions.php	2020-11-19 16:25:05.000000000 -0600
 @@ -76,6 +76,7 @@
   */
  function conf ($section = false, $value = false, $update = null) {
@@ -9928,7 +9933,7 @@ diff -urBNs elefant-elefant_2_2_4_stable/lib/Functions.php elefant-elefant_2_2_5
   * It then returns them like this:
 diff -urBNs elefant-elefant_2_2_4_stable/lib/I18n.php elefant-elefant_2_2_5_stable/lib/I18n.php
 --- elefant-elefant_2_2_4_stable/lib/I18n.php	2020-09-27 18:01:48.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/lib/I18n.php	2020-11-19 16:15:34.000000000 -0600
++++ elefant-elefant_2_2_5_stable/lib/I18n.php	2020-11-19 16:25:05.000000000 -0600
 @@ -397,7 +397,7 @@
  			}
  
@@ -9941,7 +9946,7 @@ diff -urBNs elefant-elefant_2_2_4_stable/lib/I18n.php elefant-elefant_2_2_5_stab
 Files elefant-elefant_2_2_4_stable/lib/Ini.php and elefant-elefant_2_2_5_stable/lib/Ini.php are identical
 diff -urBNs elefant-elefant_2_2_4_stable/lib/JobQueue.php elefant-elefant_2_2_5_stable/lib/JobQueue.php
 --- elefant-elefant_2_2_4_stable/lib/JobQueue.php	2020-09-27 18:01:48.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/lib/JobQueue.php	2020-11-19 16:15:34.000000000 -0600
++++ elefant-elefant_2_2_5_stable/lib/JobQueue.php	2020-11-19 16:25:05.000000000 -0600
 @@ -32,7 +32,7 @@
  			return self::$service;
  		}
@@ -9953,7 +9958,7 @@ diff -urBNs elefant-elefant_2_2_4_stable/lib/JobQueue.php elefant-elefant_2_2_5_
  			case 'beanstalkd':
 diff -urBNs elefant-elefant_2_2_4_stable/lib/JobQueueServices/Beanstalkd.php elefant-elefant_2_2_5_stable/lib/JobQueueServices/Beanstalkd.php
 --- elefant-elefant_2_2_4_stable/lib/JobQueueServices/Beanstalkd.php	2020-09-27 18:01:48.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/lib/JobQueueServices/Beanstalkd.php	2020-11-19 16:15:34.000000000 -0600
++++ elefant-elefant_2_2_5_stable/lib/JobQueueServices/Beanstalkd.php	2020-11-19 16:25:05.000000000 -0600
 @@ -12,8 +12,8 @@
  	private static function conn () {
  		if (self::$pheanstalk === null) {
@@ -9972,7 +9977,7 @@ Files elefant-elefant_2_2_4_stable/lib/MemcacheRedis.php and elefant-elefant_2_2
 Files elefant-elefant_2_2_4_stable/lib/MemcacheXCache.php and elefant-elefant_2_2_5_stable/lib/MemcacheXCache.php are identical
 diff -urBNs elefant-elefant_2_2_4_stable/lib/Model.php elefant-elefant_2_2_5_stable/lib/Model.php
 --- elefant-elefant_2_2_4_stable/lib/Model.php	2020-09-27 18:01:48.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/lib/Model.php	2020-11-19 16:15:34.000000000 -0600
++++ elefant-elefant_2_2_5_stable/lib/Model.php	2020-11-19 16:25:05.000000000 -0600
 @@ -207,6 +207,11 @@
  	 * A plural name for this class, for use in Elefant's version control.
  	 */
@@ -10204,7 +10209,7 @@ Files elefant-elefant_2_2_4_stable/tests/DBTest.php and elefant-elefant_2_2_5_st
 Files elefant-elefant_2_2_4_stable/tests/DiffTest.php and elefant-elefant_2_2_5_stable/tests/DiffTest.php are identical
 diff -urBNs elefant-elefant_2_2_4_stable/tests/EnvconfTest.php elefant-elefant_2_2_5_stable/tests/EnvconfTest.php
 --- elefant-elefant_2_2_4_stable/tests/EnvconfTest.php	1969-12-31 18:00:00.000000000 -0600
-+++ elefant-elefant_2_2_5_stable/tests/EnvconfTest.php	2020-11-19 16:15:34.000000000 -0600
++++ elefant-elefant_2_2_5_stable/tests/EnvconfTest.php	2020-11-19 16:25:05.000000000 -0600
 @@ -0,0 +1,25 @@
 +<?php
 +
@@ -10236,7 +10241,7 @@ Files elefant-elefant_2_2_4_stable/tests/FileManagerTest.php and elefant-elefant
 Files elefant-elefant_2_2_4_stable/tests/FormTest.php and elefant-elefant_2_2_5_stable/tests/FormTest.php are identical
 diff -urBNs elefant-elefant_2_2_4_stable/tests/FunctionsTest.php elefant-elefant_2_2_5_stable/tests/FunctionsTest.php
 --- elefant-elefant_2_2_4_stable/tests/FunctionsTest.php	2020-09-27 18:01:48.000000000 -0500
-+++ elefant-elefant_2_2_5_stable/tests/FunctionsTest.php	2020-11-19 16:15:34.000000000 -0600
++++ elefant-elefant_2_2_5_stable/tests/FunctionsTest.php	2020-11-19 16:25:05.000000000 -0600
 @@ -12,6 +12,14 @@
  		$i18n = conf ('I18n');
  		$this->assertEquals ('http', $i18n['negotiation_method']);
