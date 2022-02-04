@@ -1,6 +1,6 @@
 diff -urBNs elefant-elefant_2_2_6_stable/.docker/Dockerfile-DEV elefant-elefant_2_2_7_stable/.docker/Dockerfile-DEV
 --- elefant-elefant_2_2_6_stable/.docker/Dockerfile-DEV	2021-09-07 09:42:18.000000000 -0500
-+++ elefant-elefant_2_2_7_stable/.docker/Dockerfile-DEV	2022-02-04 15:07:20.000000000 -0600
++++ elefant-elefant_2_2_7_stable/.docker/Dockerfile-DEV	2022-02-04 17:45:24.000000000 -0600
 @@ -24,6 +24,7 @@
  
  RUN chown -R www-data:www-data /www \
@@ -11,7 +11,7 @@ diff -urBNs elefant-elefant_2_2_6_stable/.docker/Dockerfile-DEV elefant-elefant_
  	&& composer install
 diff -urBNs elefant-elefant_2_2_6_stable/.docker/Dockerfile-PROD elefant-elefant_2_2_7_stable/.docker/Dockerfile-PROD
 --- elefant-elefant_2_2_6_stable/.docker/Dockerfile-PROD	2021-09-07 09:42:18.000000000 -0500
-+++ elefant-elefant_2_2_7_stable/.docker/Dockerfile-PROD	2022-02-04 15:07:20.000000000 -0600
++++ elefant-elefant_2_2_7_stable/.docker/Dockerfile-PROD	2022-02-04 17:45:24.000000000 -0600
 @@ -1,5 +1,8 @@
  FROM php:7.4-apache
  
@@ -31,7 +31,7 @@ diff -urBNs elefant-elefant_2_2_6_stable/.docker/Dockerfile-PROD elefant-elefant
  	&& touch /www/conf/installed \
 diff -urBNs elefant-elefant_2_2_6_stable/.docker/Dockerfile-WORKER elefant-elefant_2_2_7_stable/.docker/Dockerfile-WORKER
 --- elefant-elefant_2_2_6_stable/.docker/Dockerfile-WORKER	1969-12-31 18:00:00.000000000 -0600
-+++ elefant-elefant_2_2_7_stable/.docker/Dockerfile-WORKER	2022-02-04 15:07:20.000000000 -0600
++++ elefant-elefant_2_2_7_stable/.docker/Dockerfile-WORKER	2022-02-04 17:45:24.000000000 -0600
 @@ -0,0 +1,30 @@
 +FROM php:7.4-cli
 +
@@ -67,7 +67,7 @@ Files elefant-elefant_2_2_6_stable/.docker/entrypoint.sh and elefant-elefant_2_2
 Files elefant-elefant_2_2_6_stable/.docker/vhost.conf and elefant-elefant_2_2_7_stable/.docker/vhost.conf are identical
 diff -urBNs elefant-elefant_2_2_6_stable/.docker/worker.sh elefant-elefant_2_2_7_stable/.docker/worker.sh
 --- elefant-elefant_2_2_6_stable/.docker/worker.sh	1969-12-31 18:00:00.000000000 -0600
-+++ elefant-elefant_2_2_7_stable/.docker/worker.sh	2022-02-04 15:07:20.000000000 -0600
++++ elefant-elefant_2_2_7_stable/.docker/worker.sh	2022-02-04 17:45:24.000000000 -0600
 @@ -0,0 +1,7 @@
 +#!/bin/sh
 +
@@ -83,7 +83,7 @@ Files elefant-elefant_2_2_6_stable/.travis.yml and elefant-elefant_2_2_7_stable/
 Files elefant-elefant_2_2_6_stable/LICENSE and elefant-elefant_2_2_7_stable/LICENSE are identical
 diff -urBNs elefant-elefant_2_2_6_stable/Makefile elefant-elefant_2_2_7_stable/Makefile
 --- elefant-elefant_2_2_6_stable/Makefile	2021-09-07 09:42:18.000000000 -0500
-+++ elefant-elefant_2_2_7_stable/Makefile	2022-02-04 15:07:20.000000000 -0600
++++ elefant-elefant_2_2_7_stable/Makefile	2022-02-04 17:45:24.000000000 -0600
 @@ -12,6 +12,12 @@
  	docker build -t elefant-dev .
  	rm Dockerfile
@@ -99,7 +99,7 @@ diff -urBNs elefant-elefant_2_2_6_stable/Makefile elefant-elefant_2_2_7_stable/M
  	docker-compose up -d
 diff -urBNs elefant-elefant_2_2_6_stable/README.md elefant-elefant_2_2_7_stable/README.md
 --- elefant-elefant_2_2_6_stable/README.md	2021-09-07 09:42:18.000000000 -0500
-+++ elefant-elefant_2_2_7_stable/README.md	2022-02-04 15:07:20.000000000 -0600
++++ elefant-elefant_2_2_7_stable/README.md	2022-02-04 17:45:24.000000000 -0600
 @@ -1,5 +1,9 @@
  # Elefant CMS
  
@@ -496,7 +496,7 @@ Files elefant-elefant_2_2_6_stable/apps/blog/js/tag-it.js and elefant-elefant_2_
 Files elefant-elefant_2_2_6_stable/apps/blog/lib/Bitly.php and elefant-elefant_2_2_7_stable/apps/blog/lib/Bitly.php are identical
 diff -urBNs elefant-elefant_2_2_6_stable/apps/blog/lib/CsvParser.php elefant-elefant_2_2_7_stable/apps/blog/lib/CsvParser.php
 --- elefant-elefant_2_2_6_stable/apps/blog/lib/CsvParser.php	2021-09-07 09:42:18.000000000 -0500
-+++ elefant-elefant_2_2_7_stable/apps/blog/lib/CsvParser.php	2022-02-04 15:07:20.000000000 -0600
++++ elefant-elefant_2_2_7_stable/apps/blog/lib/CsvParser.php	2022-02-04 17:45:24.000000000 -0600
 @@ -96,7 +96,7 @@
  				// end of quoted field, but split by comma
  				$tmp[$i] = str_replace ('""', '"', $tmp[$i]);
@@ -588,7 +588,7 @@ Files elefant-elefant_2_2_6_stable/apps/cli/handlers/helper-docs.php and elefant
 Files elefant-elefant_2_2_6_stable/apps/cli/handlers/import-db.php and elefant-elefant_2_2_7_stable/apps/cli/handlers/import-db.php are identical
 diff -urBNs elefant-elefant_2_2_6_stable/apps/cli/handlers/index.php elefant-elefant_2_2_7_stable/apps/cli/handlers/index.php
 --- elefant-elefant_2_2_6_stable/apps/cli/handlers/index.php	2021-09-07 09:42:18.000000000 -0500
-+++ elefant-elefant_2_2_7_stable/apps/cli/handlers/index.php	2022-02-04 15:07:20.000000000 -0600
++++ elefant-elefant_2_2_7_stable/apps/cli/handlers/index.php	2022-02-04 17:45:24.000000000 -0600
 @@ -49,6 +49,7 @@
    <info>generate-password <length(8)> [--no-symbols]</info> Generate a random password
    <info>encrypt-password <password></info>                  Encrypt a password for the db
@@ -602,7 +602,7 @@ Files elefant-elefant_2_2_6_stable/apps/cli/handlers/list-helpers.php and elefan
 Files elefant-elefant_2_2_6_stable/apps/cli/handlers/permissions.php and elefant-elefant_2_2_7_stable/apps/cli/handlers/permissions.php are identical
 diff -urBNs elefant-elefant_2_2_6_stable/apps/cli/handlers/start-workers.php elefant-elefant_2_2_7_stable/apps/cli/handlers/start-workers.php
 --- elefant-elefant_2_2_6_stable/apps/cli/handlers/start-workers.php	1969-12-31 18:00:00.000000000 -0600
-+++ elefant-elefant_2_2_7_stable/apps/cli/handlers/start-workers.php	2022-02-04 15:07:20.000000000 -0600
++++ elefant-elefant_2_2_7_stable/apps/cli/handlers/start-workers.php	2022-02-04 17:45:24.000000000 -0600
 @@ -0,0 +1,19 @@
 +<?php
 +
@@ -952,7 +952,7 @@ Files elefant-elefant_2_2_6_stable/apps/designer/js/codemirror/mode/z80/z80.js a
 Files elefant-elefant_2_2_6_stable/apps/designer/js/codemirror/oldrelease.html and elefant-elefant_2_2_7_stable/apps/designer/js/codemirror/oldrelease.html are identical
 diff -urBNs elefant-elefant_2_2_6_stable/apps/designer/js/codemirror/package.json elefant-elefant_2_2_7_stable/apps/designer/js/codemirror/package.json
 --- elefant-elefant_2_2_6_stable/apps/designer/js/codemirror/package.json	2021-09-07 09:42:18.000000000 -0500
-+++ elefant-elefant_2_2_7_stable/apps/designer/js/codemirror/package.json	2022-02-04 15:07:20.000000000 -0600
++++ elefant-elefant_2_2_7_stable/apps/designer/js/codemirror/package.json	2022-02-04 17:45:24.000000000 -0600
 @@ -7,7 +7,7 @@
                    "url": "http://codemirror.net/LICENSE"}],
      "directories": {"lib": "./lib"},
@@ -1145,7 +1145,7 @@ Files elefant-elefant_2_2_6_stable/apps/filemanager/views/video.html and elefant
 Files elefant-elefant_2_2_6_stable/apps/filemanager/views/videogif.html and elefant-elefant_2_2_7_stable/apps/filemanager/views/videogif.html are identical
 diff -urBNs elefant-elefant_2_2_6_stable/apps/jobqueue/conf/cli.php elefant-elefant_2_2_7_stable/apps/jobqueue/conf/cli.php
 --- elefant-elefant_2_2_6_stable/apps/jobqueue/conf/cli.php	1969-12-31 18:00:00.000000000 -0600
-+++ elefant-elefant_2_2_7_stable/apps/jobqueue/conf/cli.php	2022-02-04 15:07:20.000000000 -0600
++++ elefant-elefant_2_2_7_stable/apps/jobqueue/conf/cli.php	2022-02-04 17:45:24.000000000 -0600
 @@ -0,0 +1,5 @@
 +; <?php /*
 +
@@ -1154,7 +1154,7 @@ diff -urBNs elefant-elefant_2_2_6_stable/apps/jobqueue/conf/cli.php elefant-elef
 +; */ ?>
 diff -urBNs elefant-elefant_2_2_6_stable/apps/jobqueue/handlers/worker.php elefant-elefant_2_2_7_stable/apps/jobqueue/handlers/worker.php
 --- elefant-elefant_2_2_6_stable/apps/jobqueue/handlers/worker.php	1969-12-31 18:00:00.000000000 -0600
-+++ elefant-elefant_2_2_7_stable/apps/jobqueue/handlers/worker.php	2022-02-04 15:07:20.000000000 -0600
++++ elefant-elefant_2_2_7_stable/apps/jobqueue/handlers/worker.php	2022-02-04 17:45:24.000000000 -0600
 @@ -0,0 +1,38 @@
 +<?php
 +
@@ -9308,7 +9308,7 @@ Files elefant-elefant_2_2_6_stable/apps/user/views/update.html and elefant-elefa
 Files elefant-elefant_2_2_6_stable/cache/.htaccess and elefant-elefant_2_2_7_stable/cache/.htaccess are identical
 diff -urBNs elefant-elefant_2_2_6_stable/composer.json elefant-elefant_2_2_7_stable/composer.json
 --- elefant-elefant_2_2_6_stable/composer.json	2021-09-07 09:42:20.000000000 -0500
-+++ elefant-elefant_2_2_7_stable/composer.json	2022-02-04 15:07:21.000000000 -0600
++++ elefant-elefant_2_2_7_stable/composer.json	2022-02-04 17:45:24.000000000 -0600
 @@ -4,13 +4,13 @@
  	"keywords": ["cms", "content management", "wysiwyg", "elefant"],
  	"homepage": "http://www.elefantcms.com/",
@@ -9343,13 +9343,13 @@ Files elefant-elefant_2_2_6_stable/conf/tools.default.php and elefant-elefant_2_
 Files elefant-elefant_2_2_6_stable/conf/tools.php and elefant-elefant_2_2_7_stable/conf/tools.php are identical
 diff -urBNs elefant-elefant_2_2_6_stable/conf/version.php elefant-elefant_2_2_7_stable/conf/version.php
 --- elefant-elefant_2_2_6_stable/conf/version.php	2021-09-07 09:42:20.000000000 -0500
-+++ elefant-elefant_2_2_7_stable/conf/version.php	2022-02-04 15:07:21.000000000 -0600
++++ elefant-elefant_2_2_7_stable/conf/version.php	2022-02-04 17:45:24.000000000 -0600
 @@ -1 +1 @@
 -<?php define ('ELEFANT_VERSION', '2.2.6');
 +<?php define ('ELEFANT_VERSION', '2.2.7');
 diff -urBNs elefant-elefant_2_2_6_stable/conf/workers.php elefant-elefant_2_2_7_stable/conf/workers.php
 --- elefant-elefant_2_2_6_stable/conf/workers.php	1969-12-31 18:00:00.000000000 -0600
-+++ elefant-elefant_2_2_7_stable/conf/workers.php	2022-02-04 15:07:21.000000000 -0600
++++ elefant-elefant_2_2_7_stable/conf/workers.php	2022-02-04 17:45:24.000000000 -0600
 @@ -0,0 +1,11 @@
 +; <?php /*
 +
@@ -9365,7 +9365,7 @@ diff -urBNs elefant-elefant_2_2_6_stable/conf/workers.php elefant-elefant_2_2_7_
 \ No newline at end of file
 diff -urBNs elefant-elefant_2_2_6_stable/docker-compose.yml elefant-elefant_2_2_7_stable/docker-compose.yml
 --- elefant-elefant_2_2_6_stable/docker-compose.yml	2021-09-07 09:42:20.000000000 -0500
-+++ elefant-elefant_2_2_7_stable/docker-compose.yml	2022-02-04 15:07:21.000000000 -0600
++++ elefant-elefant_2_2_7_stable/docker-compose.yml	2022-02-04 17:45:24.000000000 -0600
 @@ -1,10 +1,16 @@
 -# Create a development server via `docker-compose up -d`
 +# Create a development server via `docker compose -p elefant up -d`
@@ -9386,7 +9386,7 @@ diff -urBNs elefant-elefant_2_2_6_stable/docker-compose.yml elefant-elefant_2_2_
      environment:
        MYSQL_ROOT_PASSWORD: super_secret_shh
        MYSQL_DATABASE: www_db
-@@ -19,14 +25,18 @@
+@@ -19,14 +25,30 @@
      restart: always
    redis:
      image: "redis:alpine"
@@ -9401,13 +9401,25 @@ diff -urBNs elefant-elefant_2_2_6_stable/docker-compose.yml elefant-elefant_2_2_
 +      - "11300:11300"
 +    networks:
 +      - app-network
++  beanstalk-console:
++    image: schickling/beanstalkd-console
++    environment:
++      AUTH: enable
++      AUTH_USERNAME: bean_admin
++      AUTH_PASSWORD: bean_pass
++    depends_on:
++      - beanstalkd
++    ports:
++      - "2080:2080"
++    networks:
++      - app-network
    www:
      image: elefant-dev
 -    container_name: www
      environment:
        ELEFANT_DB_DRIVER: mysql
        ELEFANT_DB_HOST: "mysql:3306"
-@@ -39,6 +49,7 @@
+@@ -39,6 +61,7 @@
      depends_on:
        - mysql
        - redis
@@ -9415,7 +9427,7 @@ diff -urBNs elefant-elefant_2_2_6_stable/docker-compose.yml elefant-elefant_2_2_
      volumes:
        - .:/www
      ports:
-@@ -47,10 +58,24 @@
+@@ -47,10 +70,24 @@
        - app-network
      stdin_open: true # docker run -i
      tty: true        # docker run -t
@@ -9544,7 +9556,7 @@ Files elefant-elefant_2_2_6_stable/lib/Autoloader.php and elefant-elefant_2_2_7_
 Files elefant-elefant_2_2_6_stable/lib/CRUD.php and elefant-elefant_2_2_7_stable/lib/CRUD.php are identical
 diff -urBNs elefant-elefant_2_2_6_stable/lib/Cache.php elefant-elefant_2_2_7_stable/lib/Cache.php
 --- elefant-elefant_2_2_6_stable/lib/Cache.php	2021-09-07 09:42:20.000000000 -0500
-+++ elefant-elefant_2_2_7_stable/lib/Cache.php	2022-02-04 15:07:21.000000000 -0600
++++ elefant-elefant_2_2_7_stable/lib/Cache.php	2022-02-04 17:45:24.000000000 -0600
 @@ -151,10 +151,10 @@
  	/**
  	 * Emulates `Memcache::get`.
@@ -9569,7 +9581,7 @@ diff -urBNs elefant-elefant_2_2_6_stable/lib/Cache.php elefant-elefant_2_2_7_sta
  	/**
 diff -urBNs elefant-elefant_2_2_6_stable/lib/Controller.php elefant-elefant_2_2_7_stable/lib/Controller.php
 --- elefant-elefant_2_2_6_stable/lib/Controller.php	2021-09-07 09:42:20.000000000 -0500
-+++ elefant-elefant_2_2_7_stable/lib/Controller.php	2022-02-04 15:07:21.000000000 -0600
++++ elefant-elefant_2_2_7_stable/lib/Controller.php	2022-02-04 17:45:24.000000000 -0600
 @@ -727,12 +727,16 @@
  
  	/**
@@ -9606,7 +9618,7 @@ Files elefant-elefant_2_2_6_stable/lib/FrontController.php and elefant-elefant_2
 Files elefant-elefant_2_2_6_stable/lib/Functions.php and elefant-elefant_2_2_7_stable/lib/Functions.php are identical
 diff -urBNs elefant-elefant_2_2_6_stable/lib/I18n.php elefant-elefant_2_2_7_stable/lib/I18n.php
 --- elefant-elefant_2_2_6_stable/lib/I18n.php	2021-09-07 09:42:20.000000000 -0500
-+++ elefant-elefant_2_2_7_stable/lib/I18n.php	2022-02-04 15:07:21.000000000 -0600
++++ elefant-elefant_2_2_7_stable/lib/I18n.php	2022-02-04 17:45:24.000000000 -0600
 @@ -71,6 +71,11 @@
  	 * The full name of language in use (ie. 'English' for 'en').
  	 */
@@ -9627,7 +9639,7 @@ Files elefant-elefant_2_2_6_stable/lib/MemcacheAPC.php and elefant-elefant_2_2_7
 Files elefant-elefant_2_2_6_stable/lib/MemcacheExt.php and elefant-elefant_2_2_7_stable/lib/MemcacheExt.php are identical
 diff -urBNs elefant-elefant_2_2_6_stable/lib/MemcacheRedis.php elefant-elefant_2_2_7_stable/lib/MemcacheRedis.php
 --- elefant-elefant_2_2_6_stable/lib/MemcacheRedis.php	2021-09-07 09:42:20.000000000 -0500
-+++ elefant-elefant_2_2_7_stable/lib/MemcacheRedis.php	2022-02-04 15:07:21.000000000 -0600
++++ elefant-elefant_2_2_7_stable/lib/MemcacheRedis.php	2022-02-04 17:45:24.000000000 -0600
 @@ -122,8 +122,12 @@
  	/**
  	 * Emulates `Memcache::get`.
@@ -9646,7 +9658,7 @@ diff -urBNs elefant-elefant_2_2_6_stable/lib/MemcacheRedis.php elefant-elefant_2
 Files elefant-elefant_2_2_6_stable/lib/MemcacheXCache.php and elefant-elefant_2_2_7_stable/lib/MemcacheXCache.php are identical
 diff -urBNs elefant-elefant_2_2_6_stable/lib/Model.php elefant-elefant_2_2_7_stable/lib/Model.php
 --- elefant-elefant_2_2_6_stable/lib/Model.php	2021-09-07 09:42:20.000000000 -0500
-+++ elefant-elefant_2_2_7_stable/lib/Model.php	2022-02-04 15:07:21.000000000 -0600
++++ elefant-elefant_2_2_7_stable/lib/Model.php	2022-02-04 17:45:24.000000000 -0600
 @@ -513,7 +513,7 @@
  		$q = new $class;
  		$res = (array) DB::single ('select * from `' . $q->table . '` where `' . $q->key . '` = ?', $id);
@@ -9859,7 +9871,7 @@ Files elefant-elefant_2_2_6_stable/tests/PageTest.php and elefant-elefant_2_2_7_
 Files elefant-elefant_2_2_6_stable/tests/RestfulTest.php and elefant-elefant_2_2_7_stable/tests/RestfulTest.php are identical
 diff -urBNs elefant-elefant_2_2_6_stable/tests/TemplateTest.php elefant-elefant_2_2_7_stable/tests/TemplateTest.php
 --- elefant-elefant_2_2_6_stable/tests/TemplateTest.php	2021-09-07 09:42:20.000000000 -0500
-+++ elefant-elefant_2_2_7_stable/tests/TemplateTest.php	2022-02-04 15:07:21.000000000 -0600
++++ elefant-elefant_2_2_7_stable/tests/TemplateTest.php	2022-02-04 17:45:24.000000000 -0600
 @@ -6,7 +6,7 @@
  	function test_replace_vars () {
  		$t = new Template ('UTF-8');
